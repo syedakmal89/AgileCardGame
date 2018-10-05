@@ -11,11 +11,23 @@ public class GameDriver {
 		
 		
 		
-		if(selection.equals("rules")) {
+		if(selection.equals("rules")) 
+		{
 			displayRules();
-		}else if(selection.equals("start")) {
+		}
+		else if(selection.equals("start")) 
+		{
 			System.out.println("HERE WE GOOOOOO!");
-		}else {
+			Team teamOne = new Team(1);
+			Team teamTwo = new Team(2);
+			
+			teamOne.setTeamName();
+			System.out.println("I like your name team " + teamOne.getTeamName());	
+			teamTwo.setTeamName();
+			System.out.println("oof team" + teamTwo.getTeamName() + " team one had the better name");
+		}
+		else 
+		{
 			System.out.println("AHHHHH none of those words were right bleh");	
 		}	
 		
